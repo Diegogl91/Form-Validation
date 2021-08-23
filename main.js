@@ -6,7 +6,7 @@ form.addEventListener('submit', function (e) {
 
     let hasError = false;
 
-    let { inputCard, inputCVC, inputAmount, inputName, inputLastname, inputCity, select, textArea } = form;
+    let { inputCard, inputCVC, inputAmount, inputName, inputLastname, inputCity, select, inputZip, textArea } = form;
 
     if (inputCard.value === '') {
         inputCard.classList.add('alert-danger');
@@ -56,13 +56,22 @@ form.addEventListener('submit', function (e) {
         inputCity.classList.add('is-valid');
     }
 
-    if (select.value === '') {
+    if (select.value === "Pick a State") {
         select.classList.add('alert-danger');
         hasError = true;
     } else {
         select.classList.remove('alert-danger');
         select.classList.add('is-valid');
     }
+
+    if (inputZip.value === '') {
+        inputZip.classList.add('alert-danger');
+        hasError = true;
+    } else {
+        inputZip.classList.remove('alert-danger');
+        inputZip.classList.add('is-valid');
+    }
+
 
     if (textArea.value === '') {
         textArea.classList.add('alert-danger');
