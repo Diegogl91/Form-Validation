@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario Con Bootstrap</title>
+</head>
+
+<body>
+    <div class="container d-flex py-5 justify-content-center">
+        <div class="card ">
+            <div class="card-header">
+                <h3>Payment for example</h3>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger p-1" role="alert">
+                    <p class="m-0 fw-bold">Some fields are missing</p>
+                </div>
+                <form class="row g-3">
+                    <div class="col-sm-12 col-md-5">
+                        <label for="inputCard" class="form-label fw-bold">Card #</label>
+                        <input type="password" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXX"
+                            name="inputCard">
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <label for="inputCVC" class="form-label fw-bold">CVC #</label>
+                        <input type="text" class="form-control" id="inputCVC" placeholder="0000" name="inputCVC">
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <label for="inputAmount" class="form-label fw-bold">Amount</label>
+                        <input type="text" class="form-control" id="inputAmount" placeholder="Amount"
+                            name="inputAmount">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputFirstname" class="form-label fw-bold">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstname" name="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputLastname" class="form-label fw-bold">Last Name</label>
+                        <input type="text" class="form-control" id="inputLastname" name="inputLastname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label fw-bold">City</label>
+                        <input type="text" class="form-control" id="inputCity" name="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label fw-bold">State</label>
+                        <select id="inputState" class="form-select" name="select">
+                            <option selected>Pick a State</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label fw-bold">Postal Code</label>
+                        <input type="text" class="form-control" id="inputZip" name="inputZip">
+                    </div>
+                    <!-- modos de pago -->
+
+                    <div class="col-md-6 ">
+                        <p class="fw-bold">We accept:</p>
+                        <span class="bg-secondary p-1 rounded  ">
+                            <div class="form-check form-check-inline ">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    <i class="fab fa-cc-mastercard text-light"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    <i class="fab fa-cc-visa text-light"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    <i class="fab fa-cc-diners-club text-light"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    <i class="fab fa-cc-amex text-light"></i>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="form-floating">
+                            <p class="fw-bold mb-0" for="floatingTextarea">Message</p>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                name="textArea"></textarea>
+                            <label for="floatingTextarea"></label>
+                            <p class="text-muted">add any note here</p>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="card-footer">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-0 fw-bold bg-secondary border border-secondary "
+                        type="button">Cancel</button>
+                    <button class="btn btn-primary fw-bold" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>
