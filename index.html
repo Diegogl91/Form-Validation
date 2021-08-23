@@ -22,35 +22,35 @@
                     <h3>Payment for example</h3>
                 </div>
                 <div class="card-body">
-                    <div class="alert alert-danger p-1" role="alert">
-                        <p class="m-0 fw-bold">Some fields are missing</p>
+                    <div class="alert alert-danger p-1 barra" role="alert" id="Alerta">
+                        <p class="m-0 fw-bold ">Some fields are missing</p>
                     </div>
                     <div class="row g-3"> 
                         <div class="col-sm-12 col-md-5">
                             <label for="inputCard" class="form-label fw-bold">Card #</label>
-                            <input type="password" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXX"
-                                name="inputCard">
+                            <input type="text" class="form-control" id="inputCard" placeholder="XXXX-XXXX-XXXX-XXXX"
+                                name="inputCard" pattern="[0-9]{16}">
                         </div>
                         <div class="col-sm-12 col-md-3">
                             <label for="inputCVC" class="form-label fw-bold">CVC #</label>
-                            <input type="text" class="form-control" id="inputCVC" placeholder="0000" name="inputCVC">
+                            <input type="text" class="form-control" id="inputCVC" placeholder="000" name="inputCVC" pattern="[0-9]{3}">
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <label for="inputAmount" class="form-label fw-bold">Amount</label>
                             <input type="text" class="form-control" id="inputAmount" placeholder="Amount"
-                                name="inputAmount">
+                                name="inputAmount" pattern="[0-9]">
                         </div>
                         <div class="col-md-6">
                             <label for="inputFirstname" class="form-label fw-bold">First Name</label>
-                            <input type="text" class="form-control" id="inputFirstname" name="inputName">
+                            <input type="text" class="form-control" id="inputFirstname" name="inputName" pattern="[A-Za-z]+">
                         </div>
                         <div class="col-md-6">
                             <label for="inputLastname" class="form-label fw-bold">Last Name</label>
-                            <input type="text" class="form-control" id="inputLastname" name="inputLastname">
+                            <input type="text" class="form-control" id="inputLastname" name="inputLastname" pattern="[A-Za-z]+">
                         </div>
                         <div class="col-md-6">
                             <label for="inputCity" class="form-label fw-bold">City</label>
-                            <input type="text" class="form-control" id="inputCity" name="inputCity">
+                            <input type="text" class="form-control" id="inputCity" name="inputCity" pattern="[A-Za-z]+">
                         </div>
                         <div class="col-md-4">
                             <label for="inputState" class="form-label fw-bold">State</label>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-md-2">
                             <label for="inputZip" class="form-label fw-bold">Postal Code</label>
-                            <input type="text" class="form-control" id="inputZip" name="inputZip">
+                            <input type="text" class="form-control" id="inputZip" name="inputZip" pattern="[0-9]">
                         </div>
                         <!-- modos de pago -->
 
